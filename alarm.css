@@ -1,0 +1,142 @@
+
+/* Style for allover page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Style for HTML tags */
+  body{
+    font-family: 'Arial', sans-serif;
+    background:linear-gradient(45deg, #007bff, #27ae60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  select{
+    appearance: none; 
+    height: inherit;
+    width:inherit;
+    border-radius: 50%;
+    padding:10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  input[type="date"]{
+    margin-left:10px;
+    border-radius: 5px;
+    padding:5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+
+  /* Style for classes */
+
+  .selectTimeDiv{
+    margin-right: 20px;
+   }
+
+   .alarms{
+    margin-top:10px;
+    font-size: 2 rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+   }
+
+   .deleteBtn{
+      padding: 10px;
+      margin-left: 50px;
+      border-radius: 10px;
+      border:none;
+      color: white;
+      font-size: 1 rem;
+      font-weight: 600;
+      background-color: red;
+      transition: all 0.3s linear;
+   }
+
+   .deleteBtn:hover{
+    background-color: black;
+    color: red;
+    transform: scale(0.9);
+   }
+
+
+  /* Style for individual Id*/
+  #clock-container{
+    width: 50%;
+    height: inherit;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  #time{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+  }
+
+  #selectDate{
+    font-weight: 600;
+  }
+
+ #selectTime{
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+ }
+
+ #setAlarm{
+  margin-left: 20px;
+  padding:10px;
+  border-radius: 10px;
+  border:none;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(70, 130, 132);
+  transition: all 0.3s;
+ }
+
+ #setAlarm:hover{
+  background-color: rgb(6, 74, 74);
+ }
+
+ #alarmList{
+  margin-top:3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+ }
+
+@media  screen and (max-width: 536px) {
+
+  #clock-container{
+    width:100vw;
+    height:100vh;
+  }
+  
+}
+
+ 

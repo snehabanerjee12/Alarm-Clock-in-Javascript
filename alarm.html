@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Linking the css style sheet -->
+     <link rel="stylesheet" type="text/css" href="alarm.css">
+
+    <title>Alarm Clock</title>
+    <!-- Favicon -->
+    <link rel = "icon" href="https://library.kissclipart.com/20191014/aie/kissclipart-clock-icon-management-icon-time-icon-474c4db05c8d3baf.png" />
+
+   
+</head>
+<body>
+    <div id="clock-container">
+        <h1>Alarm Clock</h1>
+
+    <!-- to show the current time constantly  -->
+    <div id="time"></div>
+
+    <!--Input form for user to select values and set alarm  -->
+    <form id="selectTime">
+        <span style="padding:10px">Select Time:</span>
+        <div class="selectTimeDiv">
+            <select required name="hours" id="hours"></select>
+            <select required name="minutes" id="minutes"></select>
+            <select required name ="seconds" id="seconds"></select>
+            <select required name="amPm" id="amPm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <button id="setAlarm" onclick="setAlarmFunc()" type="button">Set Alarm</button>
+        </div>
+    </form>
+
+    <!-- section to show the alarm lists -->
+    <div id="alarmList">
+        <h2>Alarms</h2>
+    </div>
+    </div>
+  
+<!-- Linking the Javascript file -->
+<script src="alarm.js"></script>
+</body>
+</html>
