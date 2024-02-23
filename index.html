@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href="https://library.kissclipart.com/20191014/aie/kissclipart-clock-icon-management-icon-time-icon-474c4db05c8d3baf.png" />
+    <title>Alarm Clock</title>
+
+    <!-- Linking the css style sheet -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body onload="loadingClock()">
+    
+    <div class="clock-container">
+            <h1>ALARM CLOCK</h1>
+        <!-- Analog Clock -->
+
+        <div class="analogClock">
+
+            <div class="circle" id="second" style="--clr:yellow"><i></i></div>
+            <div class="circle circle2" id="minute" style="--clr:green"><i></i></div>
+            <div class="circle circle3" id="hour" style ="--clr:red"><i></i></div>
+
+            <span style="--i:1;"><b>1</b></span>
+            <span style = "--i:2;"><b>2</b></span>
+            <span style = "--i:3;"><b>3</b></span>
+            <span style = "--i:4;"><b>4</b></span>
+            <span style = "--i:5;"><b>5</b></span>
+            <span style = "--i:6;"><b>6</b></span>
+            <span style = "--i:7;"><b>7</b></span>
+            <span style = "--i:8;"><b>8</b></span>
+            <span style = "--i:9;"><b>9</b></span>
+            <span style = "--i:10;"><b>10</b></span>
+            <span style = "--i:11;"><b>11</b></span>
+            <span style = "--i:12;"><b>12</b></span>
+        </div>
+
+        <!-- Digital Clock -->
+        <div class="digitalClock">
+            <div id="digiHours" style="--clr:red;">00</div>
+            <div id="digiMinutes" style="--clr:green;">00</div>
+            <div id="digiSeconds" style="--clr:yellow;">00</div>
+            <div id="digiampm">AM</div>
+        </div>
+
+        <!-- Day Shown -->
+        <div class="alarm">
+            <div class ="date">
+                <span id="dayName"></span>
+                <span id="month"></span>
+                <span id="dayNum"></span>
+                <span id="year"></span>
+            </div>
+        </div>
+
+        <!-- Alarm Set  -->
+        <h5>Set Alarm</h5>
+        <div class="setAlarm">
+            <div class="setTime">
+                <select>
+                    <option value="setHour" selected hidden>Hour</option>
+                </select>
+            </div>
+            <div class="setTime">
+                <select>
+                    <option value="setMinute" selected hidden>Minutes</option>
+                </select>
+            </div>
+            <div class="setTime">
+                <select>
+                    <option value="setSecond" selected hidden>Seconds</option>
+                </select>
+            </div>
+            <div class="setTime">
+                <select>
+                    <option value="setamPm" selected hidden>AM/PM</option>
+                </select>
+            </div>
+            <button id="SetAlarmBtn">Set Alarm</button>
+        </div>
+
+        <!-- Alarm List Container -->
+        <div class="alarmListDiv">
+            <h3 id="alarmtitle" style="display:none;">Alarms</h3>
+            <div class="alarmList"></div>
+        </div>
+
+    </div>
+
+    <!-- Linking the JAVASCRIPT file -->
+    <script src="index.js"></script>
+</body>
+</html>
